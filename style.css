@@ -76,7 +76,7 @@ body{
 
 /* header */
 header{border-bottom:1.5px solid var(--line);padding-bottom:16px;margin-bottom:26px;position:relative}
-header::after{content:'';position:absolute;right:0;bottom:-1.5px;width:46px;height:3px;border-radius:2px;
+header::after{content:'';position:absolute;left:0;bottom:-1.5px;width:46px;height:3px;border-radius:2px;
   background:linear-gradient(90deg,var(--accent),var(--accent-2))}
 h1{font-size:32px;letter-spacing:2px;color:var(--text)}
 .title{font-size:15.5px;color:var(--accent);font-weight:600;margin-top:5px;letter-spacing:.4px}
@@ -87,9 +87,10 @@ h1{font-size:32px;letter-spacing:2px;color:var(--text)}
 
 
 /* avatar */
-header{display:flex;align-items:center;justify-content:space-between;gap:28px}
-.head-text{flex:1;min-width:0;text-align:right}
-.head-text h1,.head-text .title,.head-text .contact{text-align:right}
+header{display:flex;align-items:center;justify-content:flex-start;gap:28px}
+.head-text{flex:1;min-width:0;text-align:left}
+.head-text h1,.head-text .title,.head-text .contact{text-align:left}
+.head-text .contact{max-width:520px}
 .avatar{
   flex:none;width:104px;height:104px;border-radius:50%;overflow:hidden;
   border:3px solid var(--card);
