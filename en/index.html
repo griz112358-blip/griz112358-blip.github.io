@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haoran Tao · Resume</title>
+<meta name="description" content="Senior Frontend Engineer & AI Agent Engineer, 12 years, Shanghai.">
+<meta property="og:title" content="Haoran Tao · Resume">
+<meta property="og:description" content="Senior Frontend Engineer & AI Agent Engineer, 12 years, Shanghai.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="topbar noprint">
+  <div class="topbar-inner">
+    <div class="brand"><span>Haoran Tao</span> · Resume</div>
+    <div class="spacer"></div>
+    <a class="btn active" href="./">English</a>
+    <a class="btn " href="/">中文</a>
+    <a class="btn primary" href="/resume-en.pdf" download>Download PDF</a>
+    <button class="btn" id="themeBtn" type="button" title="Toggle theme">&#9681;</button>
+  </div>
+  <div class="scrollbar"><i id="bar"></i></div>
+</div>
+
+
+<div class="page">
+  <header>
+    <h1>Haoran Tao</h1>
+    <div class="title">Senior Frontend Engineer &amp; AI Agent Engineer</div>
+    <div class="contact">
+      Phone: 15821039813 ｜ Email: griz112358@gmail.com ｜ Location: Shanghai<br>
+      LinkedIn: <a href="https://www.linkedin.com/in/haoran1991">https://www.linkedin.com/in/haoran1991</a>
+    </div>
+  </header>
+
+  <h2>Professional Summary</h2>
+  <p>12 years of experience delivering consumer-facing products; most recently Frontend Team Lead &amp; AI Agent Engineer at the Digital R&amp;D Center of a global premium beauty group (Estée Lauder, 2021.02 - 2026.09).</p>
+  <ul class="summary">
+    <li><strong>Senior software development</strong>: hands-on in TypeScript / React / Next.js / Node.js / Taro; owns architecture and delivery of platforms serving 10M+ users with peak QPS 500+.</li>
+    <li><strong>AI agents in production</strong>: end-to-end ownership of two live agents (AI Customer Service, AI Virtual Try-On) — custom Agent Harness, model &amp; tool orchestration over MCP, RAG retrieval, multimodal generation, evaluation sets and regression gates (~70% autonomous resolution, P95 under 8s).</li>
+    <li><strong>E-commerce &amp; OTA industry</strong>: premium beauty e-commerce at Estée Lauder (brand sites, mini-programs, CMS at 10M+ users); Booking.com China localization, merchant qualification platform and mini-program from 0 to 1.</li>
+    <li><strong>Product sense &amp; design quality</strong>: works with design and brand teams to ship a consistent visual bar across platforms — Figma-driven specs, reusable component libraries, A/B testing and analytics-driven iteration.</li>
+    <li><strong>Agile project management</strong>: leads a 6-7 person team through requirement breakdown, sprint planning, code review and delivery acceptance; coordinates multiple brands and external vendors.</li>
+    <li><strong>English proficiency</strong>: works in English with international stakeholders, previously in a global OTA's China organization.</li>
+  </ul>
+
+  <h2>Work Experience</h2>
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="company">Estée Lauder Digital R&amp;D Center</div>
+        <div class="role">Frontend Lead &amp; AI Agent Engineer</div>
+      </div>
+      <div class="period">2021.02 - 2026.09</div>
+    </div>
+    <div class="block">
+      <div class="sub">1. Team Leadership &amp; Technical Ownership</div>
+      <ul>
+        <li>Built and led a 6-7 person frontend team owning web / mini-program / CMS architecture for premium brands (Estée Lauder, La Mer, Jo Malone, MAC) at <strong>10M+ users</strong> scale (peak DAU <strong>500K+</strong>); set frontend standards, code review and delivery acceptance</li>
+        <li>Drove technology selection (Taro, Next.js, qiankun micro-frontend, GitHub Actions CI/CD) and rolled out an AI-driven development workflow (Cursor, CodeBuddy, GitHub Copilot plus a custom Agent Harness template) — <strong>team productivity +20%</strong></li>
+        </ul>
+      </div>
+    <div class="block">
+      <div class="sub">2. E-Commerce Delivery (Website / Mini-Program / CMS)</div>
+      <ul>
+        <li><strong>Websites &amp; mini-programs</strong>: Rebuilt brand sites with Next.js (SSR, caching, static generation) — <strong>30% faster load</strong>, <strong>1M+ PV</strong>, peak <strong>QPS 500+</strong>; led Taro mini-program refactoring for complex marketing interactions (red-envelope sharing, lottery, redemption)</li>
+        <li><strong>CMS &amp; platform</strong>: Owned front-end architecture for the brand content hub and product / campaign console; designed a qiankun micro-frontend integrating multi-vendor projects, with GitHub Actions CI/CD for deployment and monitoring</li>
+        </ul>
+      </div>
+    <div class="block">
+      <div class="sub">3. AI Agent Projects</div>
+      <div class="sub-sub">AI Customer Service Agent (live chat on brand site / mini-program)</div>
+      <ul>
+        <li>Owned end-to-end agent architecture on Microsoft Foundry (intent recognition → retrieval → tool invocation → response → human handoff), exposing order, logistics, inventory and after-sales systems as callable tools over MCP, with a citation-grounded RAG knowledge base</li>
+        <li>Built a custom Agent Harness in TypeScript as the shared runtime for both agents (tool registry, error propagation, context compression, model routing, structured output validation, multi-turn memory) with evaluation sets and regression gates — <strong>500+</strong> daily sessions, ~<strong>70%</strong> autonomous resolution, ~<strong>30%</strong> less human handoff</li>
+        </ul>
+      <div class="sub-sub">AI Virtual Try-On Agent (MAC brand, web-based makeup try-on)</div>
+      <ul>
+        <li>Designed the multimodal agent flow (photo upload → skin/feature analysis → makeup parameter generation → image editing &amp; rendering → refinement → SKU recommendation), decoupling orchestration from the generative model for hot model swapping and cost control</li>
+        <li>Added output quality validation and retry (face/lip consistency, color deviation thresholds, graceful degradation) plus preloading and caching — <strong>100+</strong> daily uses, P95 latency under <strong>8s</strong></li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="company">Booking.com</div>
+        <div class="role">Frontend Engineer</div>
+      </div>
+      <div class="period">2019.01 - 2021.01</div>
+    </div>
+    <ul>
+      <li><strong>China Localization</strong>: Led localization initiatives for Booking.com China, optimized the multi-language system, and independently designed and built a vendor qualification review platform to ensure efficient and compliant onboarding</li>
+      <li><strong>Data Infrastructure</strong>: Led the integration and event tracking deployment of Google Analytics on the China site, building a unified data collection and reporting system to provide a trustworthy data foundation for business decisions</li>
+      <li><strong>Mini-Program Development</strong>: Participated in building "Booking Daily Picks" mini-program from 0 to 1, accumulating a reusable component library based on design specifications to improve iteration efficiency</li>
+      <li><strong>Experiment-Driven Growth</strong>: Designed and executed an A/B Testing experimentation framework, continuously validating product hypotheses around core conversion funnels to drive business iteration with data</li>
+        </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="company">Bilibili.com (Gaming Division)</div>
+        <div class="role">Frontend Engineer</div>
+      </div>
+      <div class="period">2017.11 - 2018.12</div>
+    </div>
+    <ul>
+      <li>Developed official websites for games including Azur Lane and Honkai Impact 3rd, using CSS3, SVG, and WebGL for high-complexity interactive effects</li>
+      <li>Migrated and optimized Webpack build process, improving development and packaging efficiency</li>
+      <li>Developed an H5 game center embedded in the app, using Node.js + Koa for SSR server-side rendering, implementing Rem solution for mobile adaptation, and building Mocha + Chai unit testing framework</li>
+        </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="company">Shanghai KaLv Information Technology Co., Ltd.</div>
+        <div class="role">Frontend Engineer</div>
+      </div>
+      <div class="period">2016.02 - 2017.10</div>
+    </div>
+    <ul>
+      <li>Developed Node.js project scaffolding adapted to the company cloud platform, improving R&amp;D standardization</li>
+      <li>Built backend management system using Vue.js + Element UI, supporting Markdown parsing and dynamic directory generation</li>
+        </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="company">Shanghai Cooki E-commerce Co., Ltd.</div>
+        <div class="role">Frontend Engineer</div>
+      </div>
+      <div class="period">2014.07 - 2015.12</div>
+    </div>
+  </div>
+
+
+  <h2>Technical Skills</h2>
+  <p class="skill-label"><strong>Agent / LLM Engineering</strong></p>
+  <div class="tags">
+    <span class="tag">Custom Agent Harness</span>
+    <span class="tag">Tool Calling (Function Calling)</span>
+    <span class="tag">MCP</span>
+    <span class="tag">Prompt Engineering</span>
+    <span class="tag">RAG (chunking / embedding / retrieval / re-ranking)</span>
+    <span class="tag">Multimodal Generation &amp; Editing</span>
+    <span class="tag">Context Compression</span>
+    <span class="tag">Multi-agent Orchestration</span>
+    <span class="tag">Guardrails</span>
+    <span class="tag">Evaluation &amp; Regression</span>
+  </div>
+  <p class="skill-label"><strong>AI Platforms</strong></p>
+  <div class="tags">
+    <span class="tag">Microsoft Foundry</span>
+    <span class="tag">Cursor</span>
+    <span class="tag">CodeBuddy</span>
+    <span class="tag">GitHub Copilot</span>
+  </div>
+  <p class="skill-label"><strong>Frontend</strong></p>
+  <div class="tags">
+    <span class="tag">React</span>
+    <span class="tag">Next.js</span>
+    <span class="tag">Vue</span>
+    <span class="tag">TypeScript</span>
+    <span class="tag">Taro</span>
+    <span class="tag">Mini-Program</span>
+    <span class="tag">Micro-frontend (qiankun)</span>
+  </div>
+  <p class="skill-label"><strong>Backend &amp; Tooling</strong></p>
+  <div class="tags">
+    <span class="tag">Node.js</span>
+    <span class="tag">Python</span>
+    <span class="tag">GitHub Actions (CI/CD)</span>
+    <span class="tag">MCP Server</span>
+  </div>
+  <p class="skill-label"><strong>Other</strong></p>
+  <div class="tags">
+    <span class="tag">WebGL</span>
+    <span class="tag">SSR</span>
+    <span class="tag">Data Analytics</span>
+    <span class="tag">A/B Testing</span>
+    <span class="tag">Figma</span>
+  </div>
+
+  <h2>Education</h2>
+  <div class="edu"><strong>Zhejiang University of Media and Communications</strong></div>
+  <p>Bachelor's | Digital Media Technology | 2010 - 2014</p>
+</div>
+
+<footer class="noprint">
+  <p>© Haoran Tao · Resume · Built with care · <a href="/">中文版本</a></p>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  var saved=null;
+  try{saved=localStorage.getItem('resume-theme');}catch(e){}
+  if(!saved){ saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark':'light'; }
+  root.setAttribute('data-theme',saved);
+  btn.addEventListener('click',function(){
+    var next = root.getAttribute('data-theme')==='dark'?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('resume-theme',next);}catch(e){}
+  });
+
+  // reveal on scroll
+  var targets=document.querySelectorAll('h2, .job, .tags');
+  targets.forEach(function(el){el.classList.add('reveal');});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.05});
+    targets.forEach(function(el){io.observe(el);});
+  }else{
+    targets.forEach(function(el){el.classList.add('in');});
+  }
+
+  // scroll progress
+  var bar=document.getElementById('bar');
+  function onScroll(){
+    var h=document.documentElement;
+    var max=h.scrollHeight-h.clientHeight;
+    var p=max>0?(h.scrollTop/max)*100:0;
+    bar.style.width=p+'%';
+  }
+  document.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+</script>
+
+</body>
+</html>

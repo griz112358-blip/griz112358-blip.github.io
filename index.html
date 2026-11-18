@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陶浩然 · 简历</title>
+<meta name="description" content="资深前端开发工程师 & AI Agent Engineer，12 年经验，上海。">
+<meta property="og:title" content="陶浩然 · 简历">
+<meta property="og:description" content="资深前端开发工程师 & AI Agent Engineer，12 年经验，上海。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar noprint">
+  <div class="topbar-inner">
+    <div class="brand">陶浩然 <span>Haoran Tao</span></div>
+    <div class="spacer"></div>
+    <a class="btn " href="/en/">English</a>
+    <a class="btn active" href="/">中文</a>
+    <a class="btn primary" href="/resume-cn.pdf" download>下载 PDF</a>
+    <button class="btn" id="themeBtn" type="button" title="Toggle theme">&#9681;</button>
+  </div>
+  <div class="scrollbar"><i id="bar"></i></div>
+</div>
+
+
+<div class="page">
+  <header>
+    <h1>陶浩然</h1>
+    <div class="title">资深前端开发工程师 &amp; AI Agent Engineer</div>
+    <div class="contact">
+      手机：15821039813 ｜ 邮箱：griz112358@gmail.com ｜ 地点：上海<br>
+      LinkedIn：<a href="https://www.linkedin.com/in/haoran1991">https://www.linkedin.com/in/haoran1991</a>
+    </div>
+  </header>
+
+  <h2>专业总结</h2>
+  <p>12 年面向消费者产品的前端与 AI 工程化经验，最近担任高端美妆集团（雅诗兰黛）数字研发中心<strong>前端团队负责人 &amp; AI Agent 工程师</strong>（2021.02 - 2026.09）。</p>
+  <ul class="summary">
+    <li><strong>资深软件开发能力</strong>：精通 TypeScript / React / Next.js / Node.js / Taro，独立负责千万级用户平台的架构设计与交付，峰值 QPS 500+。</li>
+    <li><strong>AI Agent 项目落地经验</strong>：完整主导两个线上项目（AI 智能客服、AI 在线试妆）——自研 Agent Harness、模型与工具编排（MCP）、RAG 知识检索、多模态生成、评测集与回归门禁（自助解决率约 70%，P95 生成耗时 &lt; 8s）。</li>
+    <li><strong>电商与 OTA 行业经验</strong>：雅诗兰黛高端美妆电商（官网 / 小程序 / CMS，千万级用户）；Booking.com 中国本地化、商家资质审核平台及小程序 0→1。</li>
+    <li><strong>产品能力与严格的审美</strong>：与设计、品牌团队协同落地统一视觉标准——Figma 规范、组件库沉淀、A/B 测试与数据驱动迭代。</li>
+    <li><strong>项目管理能力（Agile）</strong>：带领 6-7 人团队，负责需求拆解、迭代排期、代码评审与交付验收，协同多品牌与外部供应商团队。</li>
+    <li><strong>英语工作能力</strong>：可与国际化团队英文协作，此前任职于全球 OTA 的中国区组织。</li>
+  </ul>
+
+  <h2>工作经历</h2>
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="company">雅诗兰黛（Estée Lauder）数字研发中心</div>
+        <div class="role">前端 Lead &amp; AI Agent Engineer</div>
+      </div>
+      <div class="period">2021.02 - 2026.09</div>
+    </div>
+    <div class="block">
+      <div class="sub">一、团队管理与技术决策</div>
+      <ul>
+        <li>组建并带领 6-7 人前端团队，负责雅诗兰黛等高端品牌的小程序、官网与 CMS 后台前端体系，累计服务<strong>千万级用户</strong>，日活跃峰值<strong>50 万+</strong>；制定技术规范、Code Review 与交付验收标准</li>
+        <li>主导技术选型与架构演进（Taro / Next.js / qiankun 微前端 / GitHub Actions CI/CD），推动团队 AI 编程工作流落地（Cursor、CodeBuddy、Copilot + 自建 Agent Harness 模板），<strong>生产率提升 20%</strong></li>
+        </ul>
+      </div>
+    <div class="block">
+      <div class="sub">二、电商业务交付（官网 / 小程序 / CMS 后台）</div>
+      <ul>
+        <li><strong>官网与小程序</strong>：使用 Next.js 重构品牌官网（SSR、缓存、静态生成），<strong>加载速度提升 30%</strong>，<strong>支持百万级 PV</strong>，峰值 <strong>QPS 500+</strong>；主导 Taro 小程序架构重构，落地裂变红包、抽奖、核销等营销互动</li>
+        <li><strong>CMS 与工程体系</strong>：负责品牌内容中台与商品/活动配置后台前端架构；设计 qiankun 微前端整合多供应商项目，并建立 GitHub Actions CI/CD 流水线</li>
+        </ul>
+      </div>
+    <div class="block">
+      <div class="sub">三、AI Agent 项目开发</div>
+      <div class="sub-sub">AI 智能客服 Agent（品牌官网 / 小程序在线客服）</div>
+      <ul>
+        <li>主导 Agent 架构设计：在 <strong>Microsoft Foundry</strong> 上编排大模型与业务工具，构建「意图识别 → 检索 → 工具调用 → 话术生成 → 转人工」多步链路；通过 <strong>MCP</strong> 封装订单、物流、库存、售后系统为可调用工具，并以 <strong>RAG</strong> 知识库做引用溯源，降低幻觉</li>
+        <li>自研 <strong>Agent Harness</strong>（TypeScript）作为客服与试妆共用底座：工具注册、错误回传、上下文压缩、模型路由与降级、结构化输出校验、多轮会话记忆；并建立评测集与回归门禁——日均会话 <strong>500+</strong>，独立解决率约 <strong>70%</strong></li>
+        </ul>
+      <div class="sub-sub">AI 在线试妆 Agent（MAC 品牌 Web 端虚拟试妆）</div>
+      <ul>
+        <li>主导多模态 Agent 方案：串联「照片上传 → 肤色分析 → 妆容参数生成 → 图像编辑渲染 → 追问调整 → SKU 推荐」闭环，编排层与生成模型解耦，支持模型热切换与成本控制</li>
+        <li>建立输出质量校验与重试，配合前端预加载与缓存优化生成耗时——日均使用 <strong>100+</strong>，生成 P95 耗时 <strong>8s</strong> 以内</li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="company">Booking.com</div>
+        <div class="role">前端开发工程师</div>
+      </div>
+      <div class="period">2019.01 - 2021.01</div>
+    </div>
+    <ul>
+      <li><strong>中国站本地化</strong>：负责 Booking.com 中国站本地化建设，优化多语言系统适配方案，并独立设计开发商家资质审核平台，保障合规入驻流程高效运转</li>
+      <li><strong>数据基建</strong>：主导 Google Analytics 在中国站的接入与事件埋点部署，构建统一的数据采集与上报体系，为业务决策提供可信赖的数据底座</li>
+      <li><strong>小程序开发</strong>：从 0 到 1 参与“Booking 每日精选”小程序开发，基于设计规范沉淀可复用组件库，提升后续迭代效率</li>
+      <li><strong>实验驱动</strong>：设计并执行 AB Testing 实验框架，围绕核心转化漏斗持续验证产品假设，以数据驱动业务迭代</li>
+        </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="company">Bilibili.com（游戏事业部）</div>
+        <div class="role">前端开发工程师</div>
+      </div>
+      <div class="period">2017.11 - 2018.12</div>
+    </div>
+    <ul>
+      <li>负责《碧蓝航线》《崩坏3》等多款游戏官网开发，使用 CSS3、SVG、WebGL 实现高复杂度交互效果</li>
+      <li>迁移并优化 Webpack 构建流程，提升开发与打包效率</li>
+      <li>开发 App 内嵌 H5 游戏中心，使用 Node.js + Koa 实现 SSR 服务端渲染，采用 Rem 方案适配移动端，并构建 Mocha + Chai 单元测试体系</li>
+        </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="company">上海卡旅信息科技有限公司</div>
+        <div class="role">前端开发工程师</div>
+      </div>
+      <div class="period">2016.02 - 2017.10</div>
+    </div>
+    <ul>
+      <li>开发 Node.js 项目脚手架，适配公司云平台，提升研发标准化程度</li>
+      <li>使用 Vue.js + Element UI 构建后台管理系统，支持 Markdown 解析与动态目录生成</li>
+        </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div>
+        <div class="company">上海厨艺电子商务有限公司</div>
+        <div class="role">前端开发工程师</div>
+      </div>
+      <div class="period">2014.07 - 2015.12</div>
+    </div>
+  </div>
+
+
+  <h2>技术栈</h2>
+  <p class="skill-label"><strong>Agent / LLM 应用工程</strong></p>
+  <div class="tags">
+    <span class="tag">Agent Harness 自研、工具调用（Function Calling）、MCP、Prompt 工程、RAG（切分 / 向量检索 / 重排）、多模态图像生成与编辑、上下文压缩、多 Agent 编排、Guardrail 与评测回归</span>
+  </div>
+  <p class="skill-label"><strong>AI 平台</strong></p>
+  <div class="tags">
+    <span class="tag">Microsoft Foundry（Agent Service / 模型与工具编排）、Cursor、CodeBuddy、GitHub Copilot</span>
+  </div>
+  <p class="skill-label"><strong>前端框架</strong></p>
+  <div class="tags">
+    <span class="tag">React、Next.js、Vue、TypeScript、Taro、小程序、微前端（qiankun）</span>
+  </div>
+  <p class="skill-label"><strong>后端与工具</strong></p>
+  <div class="tags">
+    <span class="tag">Node.js、Python、GitHub Actions（CI/CD）、MCP Server</span>
+  </div>
+  <p class="skill-label"><strong>其他</strong></p>
+  <div class="tags">
+    <span class="tag">WebGL、SSR、数据分析（Google Analytics / 百度统计）、AB 测试、Figma</span>
+  </div>
+
+  <h2>教育背景</h2>
+  <div class="edu"><strong>浙江传媒学院</strong></div>
+  <div class="edu"><strong>本科｜数字媒体技术｜2010 - 2014</strong></div>
+</div>
+
+<footer class="noprint">
+  <p>© 陶浩然 · 简历 · Built with care · <a href="/en/">English version</a></p>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  var saved=null;
+  try{saved=localStorage.getItem('resume-theme');}catch(e){}
+  if(!saved){ saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark':'light'; }
+  root.setAttribute('data-theme',saved);
+  btn.addEventListener('click',function(){
+    var next = root.getAttribute('data-theme')==='dark'?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('resume-theme',next);}catch(e){}
+  });
+
+  // reveal on scroll
+  var targets=document.querySelectorAll('h2, .job, .tags');
+  targets.forEach(function(el){el.classList.add('reveal');});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.05});
+    targets.forEach(function(el){io.observe(el);});
+  }else{
+    targets.forEach(function(el){el.classList.add('in');});
+  }
+
+  // scroll progress
+  var bar=document.getElementById('bar');
+  function onScroll(){
+    var h=document.documentElement;
+    var max=h.scrollHeight-h.clientHeight;
+    var p=max>0?(h.scrollTop/max)*100:0;
+    bar.style.width=p+'%';
+  }
+  document.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+</script>
+
+</body>
+</html>
