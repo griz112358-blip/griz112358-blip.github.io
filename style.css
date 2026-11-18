@@ -87,8 +87,9 @@ h1{font-size:32px;letter-spacing:2px;color:var(--text)}
 
 
 /* avatar */
-header{display:flex;align-items:center;gap:24px}
-.head-text{flex:1;min-width:0}
+header{display:flex;align-items:center;justify-content:space-between;gap:28px}
+.head-text{flex:1;min-width:0;text-align:right}
+.head-text h1,.head-text .title,.head-text .contact{text-align:right}
 .avatar{
   flex:none;width:104px;height:104px;border-radius:50%;overflow:hidden;
   border:3px solid var(--card);
@@ -102,7 +103,9 @@ header{display:flex;align-items:center;gap:24px}
 }
 .avatar:hover{transform:scale(1.04) rotate(-2deg);box-shadow:0 0 0 3px var(--accent-2), 0 14px 32px rgba(20,32,58,.26)}
 @media (max-width:640px){
-  header{gap:16px}
+  header{gap:16px;align-items:flex-start}
+  .head-text{text-align:left}
+  .head-text h1,.head-text .title,.head-text .contact{text-align:left}
   .avatar{width:76px;height:76px}
   h1{font-size:24px}
 }
